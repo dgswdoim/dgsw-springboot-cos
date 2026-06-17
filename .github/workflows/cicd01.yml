@@ -33,5 +33,5 @@ jobs:
 
       - name: 남이 봐도 되는 변수
         run: |
-          echo ${{variables.MY_GRADE}}
-          echo ${{variables.MY_HEIGHT}}
+          echo ${{vars.MY_GRADE}}
+          echo ${{vars.MY_HEIGHT}}
