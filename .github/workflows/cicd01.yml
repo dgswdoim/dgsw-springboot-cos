@@ -28,5 +28,5 @@ jobs:
 
       - name: secret 변수 사용
         run: |
-          echo ${{screts.MY_AGE}}
-          echo ${{screts.MY_PAY}}
+          echo ${{secrets.MY_AGE}}
+          echo ${{secrets.MY_PAY}}
