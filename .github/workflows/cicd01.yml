@@ -7,10 +7,7 @@ jobs:
   My-Deploy-Job:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World 출력
-        run: echo "Hello World"
-
-      - name: 여러개 명령어 추가하기
-        run: |
-          echo "Good"
-          echo "Morning"
+      - name: github actions 내장 함수 사용
+        run: | 
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
