@@ -11,7 +11,7 @@ jobs:
         uses: appleboy/ssh-action@v1
         with:
           host: ${{secrets.EC2_HOST}}
-          username: ${{scerets.EC2_USERNAME}}
+          username: ${{secrets.EC2_USERNAME}}
           key: ${{secrets.EC2_PRIVATE_KEY}}
           script: |
             cd /home/ubuntu/dgsw-server
