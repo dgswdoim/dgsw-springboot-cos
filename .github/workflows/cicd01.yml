@@ -14,7 +14,7 @@ jobs:
           username: ${{secrets.EC2_USERNAME}}
           key: ${{secrets.EC2_PRIVATE_KEY}}
           script: |
-            cd /home/ubuntu/dgsw-server
+            cd /home/ubuntu/dgsw-springboot-cos
             git pull origin main
             ./gradlew clean build -x test
             sudo fuser -k -n tcp 80 || true
